@@ -1,74 +1,44 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# Os 4 Temperamentos à Luz dos Santos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto desenvolvido com **React**, inicialmente baseado no curso da **Alura**, e depois completamente personalizado tanto no design quanto nas funcionalidades.
 
-## Available Scripts
+O objetivo principal é apresentar, de forma interativa e visualmente agradável, os **4 temperamentos humanos à luz dos santos da Igreja Católica**, relacionando espiritualidade e desenvolvimento pessoal.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Tecnologias e Conceitos Técnicos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+###  React
+- Biblioteca JavaScript para construção de interfaces de usuário.
+- Utilização de **componentes funcionais**, que permitem maior reutilização e organização do código.
+- Uso do **JSX** (JavaScript + XML) para construir a estrutura visual de cada componente.
+- Aplicação de **props** para passar dados entre componentes.
+- Implementação de **state hooks (`useState`)** para gerenciar o estado interno dos componentes, como favoritos ou exibição de cards.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+### CSS e Estilização
+- Customização total do layout original do curso.
+- Criação de estilos próprios com **CSS puro**.
+- Uso de propriedades como:
+  - `object-fit: cover` para tratar imagens dentro dos cards sem distorção.
+  - `border-radius` para efeitos como imagens circulares.
+  - **Flexbox** (`display: flex`, `justify-content`, `align-items`) para alinhamento de elementos.
+  - **Media queries** para garantir responsividade em dispositivos móveis e desktops.
+- Paleta de cores baseada na simbologia dos vitrais e cores litúrgicas.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🚀 Funcionalidades Implementadas
+- Exibição dinâmica de dados (nome, imagem, frase).
+- Layout responsivo.
+- Cards interativos e estilizados.
+- Organização por temperamentos.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# organo-2.0
->>>>>>> 2f359ce593724a42be33f6b62d22bc7858383608
+## 📚 O que foi personalizado além do curso
+- Criação de uma nova identidade visual (cores, background, header com vitral).
+- Remoção de seções que não faziam sentido no contexto.
+- Melhorias na acessibilidade visual (contraste, fontes, tamanhos).
+- Aplicação de CSS aprimorado para evitar distorções e garantir harmonia visual.
