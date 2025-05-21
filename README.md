@@ -2,7 +2,7 @@
 
 Este é um projeto desenvolvido com **React**, inicialmente baseado no curso da **Alura**, e depois completamente personalizado tanto no design quanto nas funcionalidades.
 
-O objetivo principal é apresentar, de forma interativa e visualmente agradável, os **4 temperamentos humanos à luz dos santos da Igreja Católica**, relacionando espiritualidade e desenvolvimento pessoal.
+O objetivo principal é apresentar, de forma interativa e visualmente agradável, os **4 temperamentos humanos à luz dos santos da Igreja Católica**, relacionando espiritualidade e e como forma de aplicar os conceitos vistos no curso pela refatoração do código original.
 
 ---
 
@@ -29,7 +29,7 @@ O objetivo principal é apresentar, de forma interativa e visualmente agradável
 
 ---
 
-## 🚀 Funcionalidades Implementadas
+## Funcionalidades Implementadas
 - Exibição dinâmica de dados (nome, imagem, frase).
 - Layout responsivo.
 - Cards interativos e estilizados.
@@ -37,7 +37,7 @@ O objetivo principal é apresentar, de forma interativa e visualmente agradável
 
 ---
 
-## 📚 O que foi personalizado além do curso
+## O que foi personalizado além do curso
 - Criação de uma nova identidade visual (cores, background, header com vitral).
 - Remoção de seções que não faziam sentido no contexto.
 - Melhorias na acessibilidade visual (contraste, fontes, tamanhos).
