@@ -9,258 +9,135 @@ function App() {
   const [times, setTimes] = useState([
     {
       id: uuidv4(),
-      nome: "Programação",
-      cor: "#57C278",
+      nome: "Colérico",
+      cor: "#E57B6B",
     },
     {
       id: uuidv4(),
-      nome: "Front-End",
-      cor: "#82CFFA",
+      nome: "Melancólico",
+      cor: "#5A7C9C",
     },
     {
       id: uuidv4(),
-      nome: "Data Science",
-      cor: "#A6D157",
+      nome: "Fleumático",
+      cor: "#4CA2A1",
     },
     {
       id: uuidv4(),
-      nome: "Devops",
-      cor: "#E06B69",
-    },
-    {
-      id: uuidv4(),
-      nome: "UX e Design",
-      cor: "#DB6EBF",
-    },
-    {
-      id: uuidv4(),
-      nome: "Mobile",
-      cor: "#FFBA05",
-    },
-    {
-      id: uuidv4(),
-      nome: "Inovação e Gestão",
-      cor: "#FF8A29",
-    },
+      nome: "Sanguíneo",
+      cor: "#E9BA64",
+    },   
   ]);
 
   const inicial = [
     {
       id: uuidv4(),
       favorito: false,
-      nome: "JULIANA AMOASEI",
-      cargo: "Desenvolvedora de software e instrutora",
+      nome: "SÃO PAULO APOSTOLO",
+      frase: "Examinai tudo: abraçai o que é bom",
       imagem:
-        "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
+        "/imagens/colericos/saoPaulo.jpg",
       time: times[0].nome,
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: "DANIEL ARTINE",
-      cargo: "Engenheiro de Software na Stone Age",
+      nome: "SANTA CATARINA DE SENA",
+      frase: "A providência divina jamais falta ao homem em nada, sob a condição de que ele a aceite.",
       imagem:
-        "https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg",
+        "/imagens/colericos/santaCatarina.jpg",
       time: times[0].nome,
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: "GUILHERME LIMA",
-      cargo: "Desenvolvedor Python e JavaScript na Alura",
+      nome: "SÃO FRANCISCO XAVIER",
+      frase: "Não há cruz comparável à vida à mercê das suas próprias paixões, e não há felicidade que possa ser comparada à de morrer cada dia por sua própria vontade para se entregar inteiramente a Jesus Cristo",
       imagem:
-        "	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
+        "/imagens/colericos/saoFrancisco.jpg",
       time: times[0].nome,
-    },
+    },    
     {
       id: uuidv4(),
       favorito: false,
-      nome: "PAULO SILVEIRA",
-      cargo: "Hipster e CEO da Alura",
+      nome: "SÃO JOÃO DA CRUZ",
+      frase: "Não faça coisa nenhuma nem diga palavra que Cristo não faria ou não diria se encontrasse as mesmas circunstâncias.",
       imagem:
-        "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
-      time: times[0].nome,
-    },
+        "/imagens/melancolicos/saoJoao.jpg",
+      time: times[1].nome,
+    },    
     {
       id: uuidv4(),
       favorito: false,
-      nome: "JULIANA AMOASEI",
-      cargo: "Desenvolvedora de software e instrutora",
+      nome: "SÃO PADRE PIO",
+      frase: "Ore, espere e não se preocupe. A preocupação é inútil. Nosso Senhor misericordioso escutará a sua oração.",
       imagem:
-        "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
+        "/imagens/melancolicos/saoPio.jpg",
+      time: times[1].nome,
+    },   
+    {
+      id: uuidv4(),
+      favorito: false,
+      nome: "SANTA TERESA DE ÁVILA",
+      frase: "O verdadeiro humilde sempre duvida das próprias virtudes e considera mais seguras as que vê no próximo.",
+      imagem:
+        "/imagens/melancolicos/santaTeresa.jpg",
       time: times[1].nome,
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: "DANIEL ARTINE",
-      cargo: "Engenheiro de Software na Stone Age",
+      nome: "BEATO PIER GIORGIO FRASSATI",
+      frase: "A vida é uma luta, e não uma brincadeira",
       imagem:
-        "https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg",
-      time: times[1].nome,
-    },
-    {
-      id: uuidv4(),
-      favorito: false,
-      nome: "GUILHERME LIMA",
-      cargo: "Desenvolvedor Python e JavaScript na Alura",
-      imagem:
-        "	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
-      time: times[1].nome,
-    },
-    {
-      id: uuidv4(),
-      favorito: false,
-      nome: "PAULO SILVEIRA",
-      cargo: "Hipster e CEO da Alura",
-      imagem:
-        "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
-      time: times[1].nome,
-    },
-    {
-      id: uuidv4(),
-      favorito: false,
-      nome: "JULIANA AMOASEI",
-      cargo: "Desenvolvedora de software e instrutora",
-      imagem:
-        "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
+        "/imagens/fleumaticos/Pier.jpg",
       time: times[2].nome,
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: "DANIEL ARTINE",
-      cargo: "Engenheiro de Software na Stone Age",
+      nome: "SAO BENTO",
+      frase: "Ora e trabalha",
       imagem:
-        "https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg",
+        "/imagens/fleumaticos/saoBento.jpg",
       time: times[2].nome,
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: "GUILHERME LIMA",
-      cargo: "Desenvolvedor Python e JavaScript na Alura",
+      nome: "SÃO JOSÉ",
+      frase: "“Seja qual for o vosso trabalho, fazei-o de boa vontade, como para o Senhor, e não para os homens, cientes de que recebeis do senhor a herança como recompensa. O Senhor é Cristo” (Col 3, 23-24)",
       imagem:
-        "	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
+        "/imagens/fleumaticos/saoJose.jpg",
       time: times[2].nome,
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: "PAULO SILVEIRA",
-      cargo: "Hipster e CEO da Alura",
+      nome: "BEATO CARLO ACUTIS",
+      frase: "A única coisa que devemos pedir a Deus em oração é o desejo de ser santos",
       imagem:
-        "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
-      time: times[2].nome,
-    },
-    {
-      id: uuidv4(),
-      favorito: false,
-      nome: "JULIANA AMOASEI",
-      cargo: "Desenvolvedora de software e instrutora",
-      imagem:
-        "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
+        "/imagens/sanguineos/carlo.jpg",
       time: times[3].nome,
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: "DANIEL ARTINE",
-      cargo: "Engenheiro de Software na Stone Age",
+      nome: "SÃO FELIPE NERI",
+      frase: "Na guerra pela pureza só vencem os covardes, isto é, aqueles que fogem!",
       imagem:
-        "https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg",
+        "/imagens/sanguineos/saoFelipe.jpg",
       time: times[3].nome,
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: "GUILHERME LIMA",
-      cargo: "Desenvolvedor Python e JavaScript na Alura",
+      nome: "SANTA TEREZINHA",
+      frase: "Não prefiro nem morrer, nem viver… O que o Bom Deus prefere e escolhe para mim, eis o que me agrada mais.",
       imagem:
-        "	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
+        "/imagens/sanguineos/santaTerezinha.jpg",
       time: times[3].nome,
-    },
-    {
-      id: uuidv4(),
-      favorito: false,
-      nome: "PAULO SILVEIRA",
-      cargo: "Hipster e CEO da Alura",
-      imagem:
-        "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
-      time: times[3].nome,
-    },
-    {
-      id: uuidv4(),
-      favorito: false,
-      nome: "JULIANA AMOASEI",
-      cargo: "Desenvolvedora de software e instrutora",
-      imagem:
-        "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
-      time: times[4].nome,
-    },
-    {
-      id: uuidv4(),
-      favorito: false,
-      nome: "DANIEL ARTINE",
-      cargo: "Engenheiro de Software na Stone Age",
-      imagem:
-        "https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg",
-      time: times[4].nome,
-    },
-    {
-      id: uuidv4(),
-      favorito: false,
-      nome: "GUILHERME LIMA",
-      cargo: "Desenvolvedor Python e JavaScript na Alura",
-      imagem:
-        "	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
-      time: times[4].nome,
-    },
-    {
-      id: uuidv4(),
-      favorito: false,
-      nome: "PAULO SILVEIRA",
-      cargo: "Hipster e CEO da Alura",
-      imagem:
-        "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
-      time: times[4].nome,
-    },
-    {
-      id: uuidv4(),
-      favorito: false,
-      nome: "JULIANA AMOASEI",
-      cargo: "Desenvolvedora de software e instrutora",
-      imagem:
-        "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
-      time: times[5].nome,
-    },
-    {
-      id: uuidv4(),
-      favorito: false,
-      nome: "DANIEL ARTINE",
-      cargo: "Engenheiro de Software na Stone Age",
-      imagem:
-        "https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg",
-      time: times[5].nome,
-    },
-    {
-      id: uuidv4(),
-      favorito: false,
-      nome: "GUILHERME LIMA",
-      cargo: "Desenvolvedor Python e JavaScript na Alura",
-      imagem:
-        "	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
-      time: times[5].nome,
-    },
-    {
-      id: uuidv4(),
-      favorito: false,
-      nome: "PAULO SILVEIRA",
-      cargo: "Hipster e CEO da Alura",
-      imagem:
-        "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
-      time: times[5].nome,
-    },
+    },    
   ];
 
   const [colaboradores, setColaboradores] = useState(inicial);
@@ -304,7 +181,7 @@ function App() {
         }
       />
       <section className="times">
-        <h1>Minha organização</h1>
+        <h1>4 Caminhos, Uma Só Santidade</h1>
         {times.map((time, indice) => (
           <Time
             aoFavoritar = {resolverFavorito}

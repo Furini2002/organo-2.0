@@ -6,27 +6,25 @@ import "./formulario.css";
 
 const Formulario = ({ aoCadastrar, times, cadastrarTime }) => {
   const [nome, setNome] = useState("");
-  const [cargo, setCargo] = useState("");
   const [imagem, setImagem] = useState("");
   const [time, setTime] = useState("");
-  const [nomeTime, setnomeTime] = useState("");
-  const [corTime, setcorTime] = useState("#000000");
+  const [frase, setFrase] = useState("");
 
   const aoSubmeter = (evento) => {
     evento.preventDefault();
-    console.log("form enviado", nome, cargo, imagem, time);
+    console.log("form enviado", nome, imagem, time, frase);
     aoCadastrar({
       nome,
-      cargo,
       imagem,
       time,
+      frase
     });
   };
 
   return (
     <section className="formulario-container">
       <form className="formulario" onSubmit={aoSubmeter}>
-        <h2>Preencha os dados para criar o card do colaborador.</h2>
+        <h2>Preencha os dados para criar o card .</h2>
         <Campo
           obrigatorio={true}
           label="Nome"
@@ -36,10 +34,10 @@ const Formulario = ({ aoCadastrar, times, cadastrarTime }) => {
         />
         <Campo
           obrigatorio={true}
-          label="Cargo"
-          placeholder="Digite seu cargo "
-          valor={cargo}
-          aoAlterado={(valor) => setCargo(valor)}
+          label="Frase"
+          placeholder="Digite a uma frase ou descrição"
+          valor={frase}
+          aoAlterado={(valor) => setFrase(valor)}
         />
         <Campo
           label="Imagem"
@@ -48,37 +46,12 @@ const Formulario = ({ aoCadastrar, times, cadastrarTime }) => {
         />
         <ListaSuspensa
           obrigatorio={true}
-          label="Times"
+          label="Temperamento"
           items={times}
           valor={time}
           aoAlterado={(valor) => setTime(valor)}
         />
         <Botao texto="Criar card" />
-      </form>
-      <form
-        className="formulario"
-        onSubmit={(evento) => {
-          evento.preventDefault();
-          cadastrarTime({ nome: nomeTime, cor: corTime });
-        }}
-      >
-        <h2>Preencha os dados para criar um novo time.</h2>
-        <Campo
-          obrigatorio
-          label="Nome"
-          placeholder="Digite o nome do time "
-          valor={nomeTime}
-          aoAlterado={(valor) => setnomeTime(valor)}
-        />
-        <Campo
-          obrigatorio
-          type='color'
-          label="Cor"
-          placeholder="Digite a cor do time"
-          valor={corTime}
-          aoAlterado={(valor) => setcorTime(valor)}
-        />
-        <Botao texto="Criar um novo time" />
       </form>
     </section>
   );
